@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="445d89cf-63f5-4c87-b95a-59bbd5543435" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Rust File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="nEpxDzXV" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1XTAfnLORCTtDiFuNLQDVGHZpSt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+    <property name="org.rust.hideDetachedFileNotifications/home/quanna/workspace/Rust/rust_mvc_rest_api/src/controllers/home.controller.rs" value="true" />
+    <property name="org.rust.hideDetachedFileNotifications/home/quanna/workspace/Rust/rust_mvc_rest_api/src/controllers/home_controller.rs" value="true" />
+    <property name="org.rust.hideDetachedFileNotifications/home/quanna/workspace/Rust/rust_mvc_rest_api/src/controllers/mod.rs" value="true" />
+    <property name="org.rust.hideDetachedFileNotifications/home/quanna/workspace/Rust/rust_mvc_rest_api/src/routers/mod.rs" value="true" />
+    <property name="org.rust.hideDetachedFileNotifications/home/quanna/workspace/Rust/rust_mvc_rest_api/src/routers/router.rs" value="true" />
+    <property name="org.rust.hideDetachedFileNotifications/home/quanna/workspace/Rust/rust_mvc_rest_api/src/services/app.rs" value="true" />
+    <property name="org.rust.hideDetachedFileNotifications/home/quanna/workspace/Rust/rust_mvc_rest_api/src/services/logger.rs" value="true" />
+    <property name="org.rust.hideDetachedFileNotifications/home/quanna/workspace/Rust/rust_mvc_rest_api/src/services/mod.rs" value="true" />
+    <property name="org.rust.hideDetachedFileNotifications/home/quanna/workspace/Rust/rust_mvc_rest_api/src/services/redis.rs" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="language.rust.cargo" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/routers" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="CargoCommandRunConfiguration" factoryName="Cargo Command" nameIsGenerated="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="run" />
+      <option name="allFeatures" value="false" />
+      <option name="nocapture" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="RustProjectSettings">
+    <option name="runExternalLinterOnTheFly" value="true" />
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+    <option name="version" value="2" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="445d89cf-63f5-4c87-b95a-59bbd5543435" name="Default Changelist" comment="" />
+      <created>1581059816239</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581059816239</updated>
+      <workItem from="1581059819222" duration="801000" />
+      <workItem from="1581060629929" duration="566000" />
+      <workItem from="1581061205034" duration="3874000" />
+      <workItem from="1581071861601" duration="1844000" />
+      <workItem from="1581301958089" duration="14840000" />
+    </task>
+    <task id="LOCAL-00001" summary="update gitignore">
+      <created>1581327709601</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581327709601</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="update gitignore" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="418" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581071232944">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="418" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1581071232944" />
+    <state x="647" y="357" width="616" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581060983250">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="647" y="357" width="616" height="390" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1581060983250" />
+    <state x="515" y="147" width="880" height="810" key="CommitChangelistDialog2" timestamp="1581327709529">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="515" y="147" width="880" height="810" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1581327709529" />
+    <state x="744" y="367" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581303438709">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="744" y="367" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1581303438709" />
+    <state width="1874" height="295" key="GridCell.Tab.0.bottom" timestamp="1581071852043">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="295" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1581071852043" />
+    <state width="1874" height="295" key="GridCell.Tab.0.center" timestamp="1581071852042">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="295" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1581071852042" />
+    <state width="1874" height="295" key="GridCell.Tab.0.left" timestamp="1581071852041">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="295" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1581071852041" />
+    <state width="1874" height="295" key="GridCell.Tab.0.right" timestamp="1581071852043">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="295" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1581071852043" />
+    <state x="449" y="187" width="1024" height="845" key="SettingsEditor" timestamp="1581071519042">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="449" y="187" width="1024" height="845" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1581071519042" />
+    <state x="555" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1581327713819">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="555" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1581327713819" />
+    <state x="581" y="223" width="748" height="658" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1581070860454">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="581" y="223" width="748" height="658" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1581070860454" />
+    <state x="269" y="279" width="1372" height="547" key="new project wizard" timestamp="1581060506236">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="269" y="279" width="1372" height="547" key="new project wizard/0.27.1920.1053@0.27.1920.1053" timestamp="1581060506236" />
+  </component>
+</project>
