@@ -1,5 +1,6 @@
 use actix_web::{App, HttpServer};
 use actix_web::middleware::Logger;
+use actix_cors::Cors;
 use ::actix::prelude::*;
 use log::trace;
 
@@ -35,7 +36,9 @@ async fn main() -> std::io::Result<()> {
         App::new()
             // add redis connection pool
             .data(redis_executor.clone())
+            //enable logger
             .wrap(Logger::default())
+            .wrap(Cors::default())
             // config routers from home routers
             .configure(routers::home::init)
     }).bind("127.0.0.1:8080")
