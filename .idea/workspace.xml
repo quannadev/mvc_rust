@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="445d89cf-63f5-4c87-b95a-59bbd5543435" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/home.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routers/home.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routers/mod.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,14 +55,17 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="org.rust.hideDetachedFileNotifications/home/quanna/workspace/Rust/rust_mvc_rest_api/src/controllers/home.controller.rs" value="true" />
+    <property name="org.rust.hideDetachedFileNotifications/home/quanna/workspace/Rust/rust_mvc_rest_api/src/controllers/home.rs" value="true" />
     <property name="org.rust.hideDetachedFileNotifications/home/quanna/workspace/Rust/rust_mvc_rest_api/src/controllers/home_controller.rs" value="true" />
     <property name="org.rust.hideDetachedFileNotifications/home/quanna/workspace/Rust/rust_mvc_rest_api/src/controllers/mod.rs" value="true" />
+    <property name="org.rust.hideDetachedFileNotifications/home/quanna/workspace/Rust/rust_mvc_rest_api/src/routers/home.rs" value="true" />
     <property name="org.rust.hideDetachedFileNotifications/home/quanna/workspace/Rust/rust_mvc_rest_api/src/routers/mod.rs" value="true" />
     <property name="org.rust.hideDetachedFileNotifications/home/quanna/workspace/Rust/rust_mvc_rest_api/src/routers/router.rs" value="true" />
     <property name="org.rust.hideDetachedFileNotifications/home/quanna/workspace/Rust/rust_mvc_rest_api/src/services/app.rs" value="true" />
     <property name="org.rust.hideDetachedFileNotifications/home/quanna/workspace/Rust/rust_mvc_rest_api/src/services/logger.rs" value="true" />
     <property name="org.rust.hideDetachedFileNotifications/home/quanna/workspace/Rust/rust_mvc_rest_api/src/services/mod.rs" value="true" />
     <property name="org.rust.hideDetachedFileNotifications/home/quanna/workspace/Rust/rust_mvc_rest_api/src/services/redis.rs" value="true" />
+    <property name="org.rust.hideNoCargoProjectNotifications/home/quanna/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -114,7 +122,8 @@
       <workItem from="1581060629929" duration="566000" />
       <workItem from="1581061205034" duration="3874000" />
       <workItem from="1581071861601" duration="1844000" />
-      <workItem from="1581301958089" duration="14840000" />
+      <workItem from="1581301958089" duration="15281000" />
+      <workItem from="1581328528568" duration="2732000" />
     </task>
     <task id="LOCAL-00001" summary="update gitignore">
       <created>1581327709601</created>
