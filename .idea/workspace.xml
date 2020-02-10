@@ -4,7 +4,13 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="445d89cf-63f5-4c87-b95a-59bbd5543435" name="Default Changelist" comment="" />
+    <list default="true" id="445d89cf-63f5-4c87-b95a-59bbd5543435" name="Default Changelist" comment="Add readMe.md">
+      <change afterPath="$PROJECT_DIR$/src/services/redis.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/readMe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,7 +120,7 @@
       <workItem from="1581061205034" duration="3874000" />
       <workItem from="1581071861601" duration="1844000" />
       <workItem from="1581301958089" duration="15281000" />
-      <workItem from="1581328528568" duration="2987000" />
+      <workItem from="1581328528568" duration="3626000" />
     </task>
     <task id="LOCAL-00001" summary="update gitignore">
       <created>1581327709601</created>
@@ -130,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581332095482</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add readMe.md">
+      <created>1581332229521</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581332229521</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +152,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update gitignore" />
     <MESSAGE value="Add routers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add routers" />
+    <MESSAGE value="Add readMe.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add readMe.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="418" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581071232944">
@@ -150,10 +164,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="647" y="357" width="616" height="390" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1581060983250" />
-    <state x="515" y="147" width="880" height="810" key="CommitChangelistDialog2" timestamp="1581332095445">
+    <state x="515" y="147" width="880" height="810" key="CommitChangelistDialog2" timestamp="1581332717590">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="515" y="147" width="880" height="810" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1581332095445" />
+    <state x="515" y="147" width="880" height="810" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1581332717590" />
     <state x="744" y="367" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581303438709">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -178,10 +192,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="449" y="187" width="1024" height="845" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1581071519042" />
-    <state x="555" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1581332096695">
+    <state x="555" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1581332230600">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="555" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1581332096695" />
+    <state x="555" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1581332230600" />
     <state x="581" y="223" width="748" height="658" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1581070860454">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

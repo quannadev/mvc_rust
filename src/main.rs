@@ -12,6 +12,7 @@ use r2d2_redis::{r2d2, redis, RedisConnectionManager};
 mod routers;
 mod controllers;
 
+#[actix_rt::main]
 async fn main() -> std::io::Result<()> {
     //config redis
     let redis_uri: &str = env::var("REDIS_URI").unwrap_or_else("redis://localhost:6379").as_str();
