@@ -14,7 +14,6 @@ mod controllers;
 mod services;
 
 use services::redis::RedisExecutor;
-use services::redis_exec;
 
 const REDIS_WORKERS: usize = 7;
 #[actix_rt::main]
@@ -32,7 +31,6 @@ async fn main() -> std::io::Result<()> {
     });
     trace!("Start http server...");
     //Initialize App Server
-//    let addr = ([127, 0, 0, 1], 8080).into();
     HttpServer::new( move || {
         App::new()
             // add redis connection pool

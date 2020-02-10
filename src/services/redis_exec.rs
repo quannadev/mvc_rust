@@ -1,6 +1,4 @@
-use r2d2_redis::redis::{Commands, Connection, RedisResult};
-
-use crate::services::redis::RedisExecutor;
+use r2d2_redis::redis::{Commands, Connection};
 
 pub trait Client: Commands {
 //    fn get(&self, key: &str) -> RedisResult<()> {
