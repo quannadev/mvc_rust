@@ -1,3 +1,5 @@
-pub async fn index() -> String {
-    format!("hello")
+use actix_web::Responder;
+
+pub async fn index() -> impl Responder {
+    "Hello index".to_string()
 }
