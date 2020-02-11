@@ -1,5 +1,6 @@
 use actix_web::Responder;
 
-pub async fn index() -> impl Responder {
-    "Hello index".to_string()
+
+pub async fn index(couter: u32) -> impl Responder {
+   format!( "Goodbye Hello World {}", couter )
 }
