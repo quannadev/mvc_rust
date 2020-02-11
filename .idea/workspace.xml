@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="445d89cf-63f5-4c87-b95a-59bbd5543435" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/home.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/home.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,6 +121,7 @@
       <workItem from="1581071861601" duration="1844000" />
       <workItem from="1581301958089" duration="15281000" />
       <workItem from="1581328528568" duration="4210000" />
+      <workItem from="1581388718682" duration="4432000" />
     </task>
     <task id="LOCAL-00001" summary="update gitignore">
       <created>1581327709601</created>
@@ -148,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581332756673</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update gitignore">
+      <created>1581388839863</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1581388839863</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +169,8 @@
     <MESSAGE value="Add routers" />
     <MESSAGE value="Add readMe.md" />
     <MESSAGE value="Update docs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update docs" />
+    <MESSAGE value="Update gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update gitignore" />
   </component>
   <component name="WindowStateProjectService">
     <state x="418" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581071232944">
@@ -170,10 +181,11 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="647" y="357" width="616" height="390" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1581060983250" />
-    <state x="515" y="147" width="880" height="810" key="CommitChangelistDialog2" timestamp="1581388839741">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="547" y="137" width="924" height="810" key="CommitChangelistDialog2" timestamp="1581396128506">
+      <screen x="0" y="27" width="3840" height="1053" />
     </state>
     <state x="515" y="147" width="880" height="810" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1581388839741" />
+    <state x="547" y="137" width="924" height="810" key="CommitChangelistDialog2/0.27.3840.1053@0.27.3840.1053" timestamp="1581396128506" />
     <state x="744" y="367" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581303438709">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -198,10 +210,11 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="449" y="187" width="1024" height="845" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1581071519042" />
-    <state x="555" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1581388841987">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="126" y="231" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1581396132267">
+      <screen x="0" y="27" width="3840" height="1053" />
     </state>
     <state x="555" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1581388841987" />
+    <state x="126" y="231" key="Vcs.Push.Dialog.v2/0.27.3840.1053@0.27.3840.1053" timestamp="1581396132267" />
     <state x="581" y="223" width="748" height="658" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1581070860454">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

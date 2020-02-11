@@ -3,6 +3,7 @@ run app
 ```bash
 cargo build
 cargo watch -x run
+cargo build --release
 ```
 ### Requirements
 - [Rust](https://rust-lang.org)
