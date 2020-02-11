@@ -76,16 +76,13 @@ use actix_web::{middleware, web, App, HttpRequest, HttpResponse, HttpServer};
 
 /// simple handle
 async fn index(
-    counter1: web::Data<Mutex<usize>>,
-    counter2: web::Data<Cell<u32>>,
     counter3: web::Data<AtomicUsize>,
-    req: HttpRequest,
 ) -> HttpResponse {
 //    println!("{:?}", req);
 
     // Increment the counters
-    *counter1.lock().unwrap() += 1;
-    counter2.set(counter2.get() + 1);
+//    *counter1.lock().unwrap() += 1;
+//    counter2.set(counter2.get() + 1);
     counter3.fetch_add(1, Ordering::SeqCst);
 
     let body = format!(
@@ -103,20 +100,15 @@ async fn main() -> io::Result<()> {
 //    env_logger::init();
 
     // Create some global state prior to building the server
-    let counter1 = web::Data::new(Mutex::new(0usize));
     let counter3 = web::Data::new(AtomicUsize::new(0usize));
 
     // move is necessary to give closure below ownership of counter1
     HttpServer::new(move || {
         // Create some thread-local state
-        let counter2 = Cell::new(0u32);
 
         App::new()
-            .app_data(counter1.clone()) // add shared state
             .app_data(counter3.clone()) // add shared state
-            .data(counter2) // add thread-local state
             // enable logger
-            .wrap(middleware::Logger::default())
             // register simple handler
             .service(web::resource("/").to(index))
     })
