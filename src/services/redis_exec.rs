@@ -1,12 +1,17 @@
-//use r2d2_redis::redis::{Commands, Connection};
+//use actix::prelude::*;
+//use r2d2_redis::r2d2::Pool;
+//use r2d2_redis::RedisConnectionManager;
 //
-//pub trait Client: Commands {
-////    fn get(&self, key: &str) -> RedisResult<()> {
-////        self.get(key)
-////    }
-////    fn set(&self, key: &str, value: &str) {
-////        self.set(key, value)
-////    }
+//pub struct RedisExecutor {
+//    pub pool: Pool<RedisConnectionManager>,
 //}
 //
-//impl Client for Connection {}
+//impl RedisExecutor {
+//    pub fn new(pool: Pool<RedisConnectionManager>) -> Self {
+//        RedisExecutor { pool }
+//    }
+//}
+//
+//impl Actor for RedisExecutor {
+//    type Context = SyncContext<Self>;
+//}
