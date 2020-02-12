@@ -1,17 +1,14 @@
 extern crate serde_json;
-extern crate r2d2_redis;
 
-use actix_web::{HttpResponse, web, Responder};
-use serde::{Deserialize, Serialize};
-use crate::utils::responder_template;
-use crate::models::user_model;
-use r2d2_redis::{RedisConnectionManager, r2d2, redis};
-use redis::Commands;
+use actix::prelude::*;
+use actix_web::{Error, HttpResponse, Responder, web};
 use rand::prelude::*;
-use r2d2_redis::redis::PipelineCommands;
+use serde::{Deserialize, Serialize};
+
+use crate::models::user_model;
 use crate::services::redis_service;
 
-type RedisExecutor = web::Data<r2d2::Pool<RedisConnectionManager>>;
+type RedisActor = web::Data<r2d2_redis::r2d2::Pool<r2d2_redis::RedisConnectionManager>>;
 
 #[derive(Deserialize, Serialize)]
 pub struct Response {
@@ -24,7 +21,7 @@ pub async fn index() -> impl Responder {
         status: 200,
         message: format!("hello api"),
     };
-    responder_template::data(serde_json::to_value(&res).unwrap())
+    HttpResponse::Ok().json(res)
 }
 
 #[derive(Deserialize)]
@@ -32,22 +29,22 @@ pub struct UserParams {
     id: i32,
 }
 
-pub async fn set_user(params: web::Json<UserParams>, db: RedisExecutor) -> impl Responder {
+pub async fn set_user(params: web::Json<UserParams>, redis: RedisActor) -> Result<HttpResponse, Error> {
     let uid = params.id;
-    let conn = db.get().unwrap();
-//    let _ = redis_service::hset( conn, "users".to_string(), uid.to_string(), "quanna".to_string()).await;
-    let data = redis_service::hget( conn, "users".to_string(), uid.to_string()).await;
-    HttpResponse::Ok().body(format!("{:?}", data.unwrap()))
+    let data_redis = redis_service::HSETData {
+        key: String::from("quanna"),
+        field: String::from("123123"),
+        value: String::from("aaaa")
+    };
+    let _ = redis_service::hset(redis, data_redis).await;
+    Ok(HttpResponse::Ok().body("Ok"))
 }
 
-pub async fn get_user(params: web::Path<UserParams>, db: RedisExecutor) -> impl Responder {
+pub async fn get_user(params: web::Path<UserParams>, db: RedisActor) -> impl Responder {
     let mut conn = db.get().unwrap();
 
     let user_id = params.id;
     println!("Redis server is open");
-//    let mut pipe = redis::pipe();
-//    let data = pipe.hget("user", user_id).execute(conn.deref_mut());
-//    let uuid: u32 = FromStr::from_str(data).unwrap();
     let user = user_model::User {
         id: 123123,
         name: String::from("quanna"),

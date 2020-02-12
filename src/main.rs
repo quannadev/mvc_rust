@@ -2,12 +2,17 @@ extern crate dotenv;
 extern crate log;
 extern crate r2d2_redis;
 
-use actix_web::{App, HttpServer, web, HttpResponse};
-use actix_web::middleware::Logger;
-use r2d2_redis::{RedisConnectionManager, r2d2, redis};
-use r2d2::Pool;
-use dotenv::dotenv;
 use std::env;
+
+use actix::prelude::*;
+use actix_web::{App, HttpResponse, HttpServer, web};
+use actix_web::middleware::Logger;
+use dotenv::dotenv;
+use r2d2::Pool;
+use r2d2_redis::{r2d2, redis, RedisConnectionManager};
+use r2d2_redis::redis::parse_redis_url;
+
+use crate::services::redis_exec::RedisExecutor;
 
 mod routers;
 mod controllers;
@@ -23,24 +28,26 @@ async fn main() -> std::io::Result<()> {
     dotenv().ok();
 
     //config redis
-    let redis_uri: &str = &dotenv::var("REDIS_URI").unwrap();
-    let redis_executor = RedisConnectionManager::new(redis_uri).unwrap();
+    let redis_uri: String = env::var("REDIS_URI").expect("Redis URI must be set");
+    let redis_executor = RedisConnectionManager::new(parse_redis_url(&redis_uri).unwrap()).unwrap();
     let redis_manger = Pool::builder().build(redis_executor).unwrap();
-    let redis_clone = redis_manger.clone();
+    let redis_executor_addr = SyncArbiter::start(7, move || {
+        RedisExecutor::new(redis_manger.clone())
+    });
     //Initialize App Server
     // move is necessary to give closure below ownership of redis_executor
     println!("Starting App Server...");
     HttpServer::new(move || {
         App::new()
             // add redis connection pool
-            .data(redis_clone.clone())
+            .data(redis_manger.clone())
             //enable logger
             .wrap(Logger::new("%a - %t - %s"))
             // config routers from home routers
 //            .configure(routers::home::init)
             .configure(routers::api::init)
             .route("/", web::get().to(|| HttpResponse::Ok().body("home")))
-            .default_service(web::route().to(|| HttpResponse::Unauthorized().body("You are lost!")))
+            .default_service(web::route().to(|| HttpResponse::Unauthorized()))
     }).bind("127.0.0.1:8080")
         .unwrap()
         .run()
