@@ -2,13 +2,13 @@ extern crate serde_json;
 
 use actix::prelude::*;
 use actix_web::{Error, HttpResponse, Responder, web};
-use rand::prelude::*;
 use serde::{Deserialize, Serialize};
 
 use crate::models::user_model;
 use crate::services::redis_service;
+use crate::services::redis_exec::RedisExecutor;
 
-type RedisActor = web::Data<r2d2_redis::r2d2::Pool<r2d2_redis::RedisConnectionManager>>;
+type RedisActor = web::Data<Addr<RedisExecutor>>;
 
 #[derive(Deserialize, Serialize)]
 pub struct Response {
@@ -31,24 +31,17 @@ pub struct UserParams {
 
 pub async fn set_user(params: web::Json<UserParams>, redis: RedisActor) -> Result<HttpResponse, Error> {
     let uid = params.id;
-    let data_redis = redis_service::HSETData {
+    let rest = redis.send(redis_service::RedisSETEX{
         key: String::from("quanna"),
-        field: String::from("123123"),
-        value: String::from("aaaa")
-    };
-    let _ = redis_service::hset(redis, data_redis).await;
+        value: String::from(uid.to_string()),
+        exp: 10
+    }).await;
     Ok(HttpResponse::Ok().body("Ok"))
 }
 
-pub async fn get_user(params: web::Path<UserParams>, db: RedisActor) -> impl Responder {
-    let mut conn = db.get().unwrap();
+pub async fn get_user(params: web::Path<UserParams>, redis: RedisActor) -> impl Responder {
 
     let user_id = params.id;
-    println!("Redis server is open");
-    let user = user_model::User {
-        id: 123123,
-        name: String::from("quanna"),
-        email: String::from("quanna@example.com"),
-    };
-    HttpResponse::Ok().json(user)
+    let result = redis.send(redis_service::RedisGet("quanna".to_string(),)).await;
+    HttpResponse::Ok().body(result.unwrap())
 }

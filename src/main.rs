@@ -40,7 +40,7 @@ async fn main() -> std::io::Result<()> {
     HttpServer::new(move || {
         App::new()
             // add redis connection pool
-            .data(redis_manger.clone())
+            .data(redis_executor_addr.clone())
             //enable logger
             .wrap(Logger::new("%a - %t - %s"))
             // config routers from home routers
