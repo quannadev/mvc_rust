@@ -5,9 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="445d89cf-63f5-4c87-b95a-59bbd5543435" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/actors/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actors/redis_actor.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/http_client_service.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/api_controller.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/api_controller.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/home.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/home.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/api.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/api.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/redis_exec.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/redis_service.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/redis_service.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/responder_template.rs" beforeDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +28,11 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -47,8 +65,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+    <property name="org.rust.hideDetachedFileNotifications/Users/quannguyen/rust_mvc/mvc_rust/src/actors/mod.rs" value="true" />
+    <property name="org.rust.hideDetachedFileNotifications/Users/quannguyen/rust_mvc/mvc_rust/src/actors/redis_actor.rs" value="true" />
+    <property name="org.rust.hideDetachedFileNotifications/Users/quannguyen/rust_mvc/mvc_rust/src/controllers/api_controller.rs" value="true" />
+    <property name="org.rust.hideDetachedFileNotifications/Users/quannguyen/rust_mvc/mvc_rust/src/services/http_client_service.rs" value="true" />
     <property name="org.rust.hideDetachedFileNotifications/home/quanna/workspace/Rust/rust_mvc_rest_api/src/controllers/home.controller.rs" value="true" />
     <property name="org.rust.hideDetachedFileNotifications/home/quanna/workspace/Rust/rust_mvc_rest_api/src/controllers/home.rs" value="true" />
     <property name="org.rust.hideDetachedFileNotifications/home/quanna/workspace/Rust/rust_mvc_rest_api/src/controllers/home_controller.rs" value="true" />
@@ -64,12 +86,25 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="language.rust.cargo" />
+    <property name="settings.editor.selected.configurable" value="language.rust" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/routers" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="Unnamed" type="CargoCommandRunConfiguration" factoryName="Cargo Command" nameIsGenerated="true">
@@ -91,18 +126,6 @@
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
     <option name="version" value="2" />
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -120,6 +143,7 @@
       <workItem from="1581301958089" duration="15281000" />
       <workItem from="1581328528568" duration="4210000" />
       <workItem from="1581388718682" duration="4757000" />
+      <workItem from="1584242870059" duration="4106000" />
     </task>
     <task id="LOCAL-00001" summary="update gitignore">
       <created>1581327709601</created>
@@ -170,11 +194,29 @@
       <option name="project" value="LOCAL" />
       <updated>1581396173462</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Update redis service">
+      <created>1581526035989</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1581526035989</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update gitignore" />
@@ -183,7 +225,8 @@
     <MESSAGE value="Update docs" />
     <MESSAGE value="Update gitignore" />
     <MESSAGE value="Create speed test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create speed test" />
+    <MESSAGE value="Update redis service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update redis service" />
   </component>
   <component name="WindowStateProjectService">
     <state x="418" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581071232944">
